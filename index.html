@@ -11,10 +11,10 @@
       <meta name="description" content="This free generator helps you generate HSBC crimes, all of which are factually true!"/>
       <meta name="robots" content="all"/>
       <script defer src="https://track37.com/script.js" data-website-id="1d606955-0b69-4713-abed-a60faa73fb89"></script>
-      <link rel="shortcut icon" href="logo.png"/>
+      <link rel="shortcut icon" href="logo1.png"/>
       <meta property="og:title" content="HSBC Crime Generator!">
       <meta property="og:description" content="This free generator helps you generate HSBC crimes, all of which are factually true! ✨">
-      <meta property="og:image" content="https://bankcrimegenerator.com/logo.png">
+      <meta property="og:image" content="https://bankcrimegenerator.com/logo1.png">
       <meta property="og:url" content="https://bankcrimegenerator.com/">
       <meta property="og:type" content="website">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,13 +74,25 @@
       <div class="container">
          <h1>Fun HSBC Crimes!</h1>
          <div class="logo">
-            <img src="logo.png" style="max-width: 50px;">
+            <svg width="100px" height="100px" viewBox="0 0 48 48" id="b" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.c{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;}</style>
+</defs>
+<polygon class="c" points="13.75 13.75 24 24 34.25 13.75 13.75 13.75"/>
+<polygon class="c" points="34.25 34.25 24 24 13.75 34.25 34.25 34.25"/>
+<polygon class="c" points="34.25 34.25 44.5 24 34.25 13.75 34.25 34.25"/>
+<polygon class="c" points="13.75 13.75 3.5 24 13.75 34.25 13.75 13.75"/>
+</g>
+</svg>
          </div>
          <h1 id="crime-display">Loading one of many HSBC crimes...</h1>
          <br>
          <center>
             <button class="refresh-btn" onclick="displayRandomCrime()">
-            View a new crime!
+            View another crime!
             <span class="refresh-icon">↻</span>
             </button>
             <p><strong>Fancy some more crime? Just press the button!</strong></p>
@@ -89,36 +101,33 @@
       <script>
          // List of some of the many HSBC crimes
          const crimes = [
-             "2012 Money Laundering Settlement - HSBC paid $1.9 billion to settle U.S. charges of failing to prevent money laundering by Mexican drug cartels and processing transactions for countries under U.S. sanctions. <a href='https://www.justice.gov/opa/pr/hsbc-holdings-plc-and-hsbc-bank-usa-na-admit-anti-money-laundering-and-sanctions-violations' target='_blank'>[U.S. DOJ]</a>",
-             "Swiss Tax Evasion (SwissLeaks) - In 2015, HSBC's Swiss private banking unit was exposed for helping wealthy clients evade taxes. Documents revealed the bank had concealed assets and income from tax authorities. <a href='https://www.icij.org/investigations/swiss-leaks/' target='_blank'>[ICIJ]</a>",
-             "Foreign Exchange Manipulation - In 2014, HSBC was among several banks fined for manipulating foreign exchange markets. They paid $618 million to U.S. and UK regulators. <a href='https://www.fca.org.uk/news/press-releases/fca-fines-five-banks-£1-1-billion-fx-failings-and-announces-industry-wide' target='_blank'>[FCA]</a>",
-             "LIBOR Rate Rigging - HSBC was implicated in the manipulation of the London Interbank Offered Rate, though it paid smaller penalties than some other banks involved. <a href='https://www.reuters.com/article/us-hsbc-libor-idUSKCN1280LR' target='_blank'>[Reuters]</a>",
-             "Mortgage Securities Misconduct - In 2016, HSBC paid $470 million to settle U.S. claims related to abusive mortgage and foreclosure practices during the 2008 financial crisis. <a href='https://www.justice.gov/opa/pr/justice-department-reaches-470-million-joint-state-federal-settlement-hsbc-address-mortgage' target='_blank'>[U.S. DOJ]</a>",
-             "2018 Currency Trading Fraud - HSBC paid $101.5 million to settle U.S. charges of front-running client currency trades, where traders executed transactions before client orders to profit from price movements. <a href='https://www.justice.gov/opa/pr/hsbc-holdings-plc-agrees-pay-more-100-million-resolve-fraud-charges' target='_blank'>[U.S. DOJ]</a>",
-             "2018 Anti-Money Laundering Weaknesses - HSBC was fined £64 million by UK regulators for anti-money laundering control failures between 2010-2018. <a href='https://www.fca.org.uk/news/press-releases/fca-fines-hsbc-bank-plc-deficient-transaction-monitoring-controls' target='_blank'>[FCA]</a>",
-             "Financing Controversial Industries - HSBC has faced criticism and legal challenges for financing environmentally damaging projects and companies involved in human rights abuses. <a href='https://www.banktrack.org/bank/hsbc' target='_blank'>[BankTrack]</a>",
-             "Deferred Prosecution Agreement Violations - HSBC was found to have violated terms of its 2012 deferred prosecution agreement by failing to fully implement anti-money laundering controls. <a href='https://www.reuters.com/article/us-hsbc-usa-crime-idUSKBN1E50YA' target='_blank'>[Reuters]</a>",
-             "2020 Forex Client Misconduct - HSBC was fined $2.2 million by the Federal Reserve for unsafe and unsound practices in its foreign exchange trading business. <a href='https://www.federalreserve.gov/newsevents/pressreleases/enforcement20200929a.htm' target='_blank'>[Federal Reserve]</a>",
-             "PPI Mis-selling Scandal - HSBC was forced to pay out billions in compensation for mis-selling Payment Protection Insurance to UK customers from the 1990s through the 2000s. <a href='https://www.ftadviser.com/regulation/2019/08/28/hsbc-sets-aside-additional-500m-for-ppi/' target='_blank'>[FT Adviser]</a>",
-             "Hong Kong Democracy Crackdown Support - In 2020, HSBC faced criticism for publicly backing China's national security law in Hong Kong, which was used to suppress pro-democracy movements. <a href='https://www.theguardian.com/world/2020/jun/03/hsbc-and-standard-chartered-back-china-security-law-hong-kong' target='_blank'>[The Guardian]</a>",
-             "2013 Argentine Tax Evasion - HSBC was charged with helping over 4,000 clients evade taxes in Argentina, with alleged hidden accounts worth $3 billion. <a href='https://www.reuters.com/article/argentina-hsbc-idUSL1N0TF0KT20141125' target='_blank'>[Reuters]</a>",
-             "2021 Climate Hypocrisy - While publicly committing to climate goals, HSBC continued financing fossil fuel expansion projects worth billions, leading to accusations of greenwashing. <a href='https://shareaction.org/reports/hsbc-net-zero-ambition' target='_blank'>[ShareAction]</a>",
-             "2010 Household Finance Predatory Lending - HSBC's acquisition Household International faced lawsuits for predatory lending practices targeting vulnerable and low-income borrowers. <a href='https://www.reuters.com/article/us-hsbc-settlement-idUSBRE9930O620131004' target='_blank'>[Reuters]</a>",
-             "2012 Mis-selling to Elderly - HSBC was fined for inappropriately selling complex investment products to elderly customers in the UK without proper risk assessment. <a href='https://www.fca.org.uk/news/press-releases/fsa-fines-hsbc-£10.5m-mis-selling-products-elderly-customers' target='_blank'>[FCA]</a>",
-             "2017 Terrorism Financing Failures - HSBC was criticized for inadequate controls that allowed terrorism financing through its international banking network. <a href='https://www.reuters.com/article/us-hsbc-probe-exclusive-idUSKBN1IA1AD' target='_blank'>[Reuters]</a>",
-             "2019 Forex Market Rigging Class Action - HSBC paid $30 million to settle a class action lawsuit related to rigging of foreign exchange markets. <a href='https://www.reuters.com/article/us-hsbc-settlement-forex-idUSKCN1RK1HP' target='_blank'>[Reuters]</a>",
-             "1993-2003 Mexican Drug Cartel Money Laundering - HSBC's Mexican operations had such poor controls that cartels would design cash boxes specifically sized to fit HSBC teller windows. <a href='https://www.reuters.com/article/us-hsbc-probe-idUSBRE86B0XF20120712' target='_blank'>[Reuters]</a>",
-             "2022 Russian Sanctions Violations - HSBC was among several banks investigated for failing to properly implement sanctions against Russian oligarchs following the Ukraine invasion. <a href='https://www.ft.com/content/fe7e62b3-b3f5-4059-9826-908846e78a3e' target='_blank'>[Financial Times]</a>",
-             "2018 South Africa Political Corruption - HSBC was implicated in the Gupta scandal, allegedly facilitating illicit funds tied to government corruption in South Africa. <a href='https://www.theguardian.com/business/2017/nov/09/hsbc-investigated-gupta-money-laundering-claims-south-africa-corruption' target='_blank'>[The Guardian]</a>",
-             "2009 Bernie Madoff Facilitation - HSBC faced lawsuits for its role as custodian bank for 'feeder funds' that channeled billions into Bernie Madoff's Ponzi scheme. <a href='https://www.reuters.com/article/madoff-hsbc-lawsuit-idUSN1722342220091217' target='_blank'>[Reuters]</a>",
-             "2011 Improper Foreclosures - HSBC was among banks that signed a $25 billion settlement over improper foreclosure practices including 'robo-signing' of documents. <a href='https://www.justice.gov/opa/pr/federal-government-and-state-attorneys-general-reach-25-billion-agreement-hsbc-address' target='_blank'>[U.S. DOJ]</a>",
-             "2002-2009 Iran Sanctions Evasion - HSBC deliberately stripped identifying information from transactions with Iran to bypass U.S. sanctions. <a href='https://www.treasury.gov/press-center/press-releases/Pages/tg1799.aspx' target='_blank'>[U.S. Treasury]</a>",
-             "2006-2007 Arms Industry Financing - HSBC was found to be financing companies producing cluster bombs despite international bans on such weapons. <a href='https://www.facing-finance.org/en/database/cases/hsbc-holdings-invests-in-controversial-weapon-producing-companies/' target='_blank'>[Facing Finance]</a>",
-             "2008 Forced Insurance Scheme - HSBC settled claims it forced unnecessary insurance on mortgage borrowers and received kickbacks from insurance providers. <a href='https://www.reuters.com/article/us-hsbc-settlement-idUSBRE8780KN20120809' target='_blank'>[Reuters]</a>",
-             "2014 Foreign Worker Exploitation - HSBC faced allegations of labor abuses against migrant workers in Middle East operations. <a href='https://www.business-humanrights.org/en/latest-news/hsbc-accused-of-labor-rights-abuses-in-middle-east-operations/' target='_blank'>[Business & Human Rights Resource Centre]</a>",
-             "2018 Data Breaches - Multiple security breaches exposed sensitive customer information, with HSBC failing to implement adequate data protection. <a href='https://www.reuters.com/article/us-hsbc-cyber-idUSKCN1NB1TT' target='_blank'>[Reuters]</a>",
-             "2007-2008 Currency Exchange Fraud - HSBC charged excessive and undisclosed fees on foreign currency exchanges to customers. <a href='https://www.reuters.com/article/hsbc-forex-settlement-idUSL2N1XT11X' target='_blank'>[Reuters]</a>",
-             "2010 Tax Avoidance Schemes - HSBC created complex offshore structures specifically designed to help wealthy clients avoid legitimate taxation. <a href='https://www.theguardian.com/business/2015/feb/08/hsbc-files-expose-swiss-bank-clients-dodge-taxes-hide-millions' target='_blank'>[The Guardian]</a>"
+             "2012 Money Laundering Settlement - HSBC paid $1.9 billion to settle U.S. charges of failing to prevent money laundering by Mexican drug cartels and processing transactions for countries under U.S. sanctions. <a href='https://www.icij.org/investigations/fincen-files/hsbc-moved-vast-sums-of-dirty-money-after-paying-record-laundering-fine/#:~:text=In%20a%20controversial%20decision%2C%20prosecutors,by%20a%20court%2Dappointed%20watchdog.' target='_blank'>[Source]</a>",
+             "Swiss Tax Evasion (SwissLeaks) - In 2015, HSBC's Swiss private banking unit was exposed for helping wealthy clients evade taxes. Documents revealed the bank had concealed assets and income from tax authorities. <a href='https://www.theguardian.com/business/2015/feb/08/hsbc-files-expose-swiss-bank-clients-dodge-taxes-hide-millions' target='_blank'>[Source]</a>",
+             "Foreign Exchange Manipulation - In 2014, HSBC was among several banks fined for manipulating foreign exchange markets. They paid $618 million to U.S. and UK regulators. <a href='https://www.theguardian.com/business/2014/nov/12/foreign-exchange-fines-ubs-hsbc-citibank-jp-morgan-rbs-penalties-market-rigging' target='_blank'>[Source]</a>",
+             "LIBOR Rate Rigging - HSBC was implicated in the manipulation of the London Interbank Offered Rate, though it paid smaller penalties than some other banks involved. <a href='https://www.reuters.com/article/world/hsbc-to-pay-100-million-to-end-libor-rigging-lawsuit-in-us-idUSKBN1H600E/' target='_blank'>[Source]</a>",
+             "Mortgage Securities Misconduct - In 2016, HSBC paid $470 million to settle U.S. claims related to abusive mortgage and foreclosure practices during the 2008 financial crisis. <a href='https://www.theguardian.com/business/2016/feb/05/hsbc-fined-morgage-practices-financial-crisis#:~:text=The%20settlement%20with%20the%20US,without%20properly%20reviewing%20the%20paperwork.' target='_blank'>[Source]</a>",
+             "2018 Currency Trading Fraud - HSBC paid $101.5 million to settle U.S. charges of front-running client currency trades, where traders executed transactions before client orders to profit from price movements. <a href='https://www.bbc.co.uk/news/business-42742366' target='_blank'>[Source]</a>",
+             "2018 Anti-Money Laundering Weaknesses - HSBC was fined £64 million by UK regulators for anti-money laundering control failures between 2010-2018. <a href='https://www.fca.org.uk/news/press-releases/fca-fines-hsbc-bank-plc-deficient-transaction-monitoring-controls#:~:text=The%20FCA%20has%20fined%20HSBC,to%20identify%20possible%20financial%20crime.' target='_blank'>[Source]</a>",
+             "Financing Controversial Industries - HSBC has faced criticism and legal challenges for financing environmentally damaging projects and companies involved in human rights abuses. <a href='https://www.theguardian.com/business/2021/feb/21/human-rights-and-climate-crisis-give-hsbc-an-image-problem' target='_blank'>[Source]</a>",
+             "Deferred Prosecution Agreement Violations - HSBC was found to have violated terms of its 2012 deferred prosecution agreement by failing to fully implement anti-money laundering controls. <a href='https://www.justice.gov/archives/opa/pr/hsbc-holdings-plc-and-hsbc-bank-usa-na-admit-anti-money-laundering-and-sanctions-violations#:~:text=In%20addition%20to%20forfeiting%20%241.256,Reserve%20%E2%80%93%20for%20its%20AML%20program' target='_blank'>[Source]</a>",
+             "2017 Forex Client Misconduct - HSBC was fined $175 million by the Federal Reserve for unsafe and unsound practices in its foreign exchange trading business. <a href='https://www.federalreserve.gov/newsevents/pressreleases/enforcement20170929a.htm' target='_blank'>[Source]</a>",
+             "PPI Mis-selling Scandal - HSBC was forced to pay out billions in compensation for mis-selling Payment Protection Insurance to UK customers from the 1990s through the 2000s. <a href='https://www.moneysavingexpert.com/news/2013/11/hsbcs-ppi-mis-selling-bill-hits-1-8-billion/' target='_blank'>[Source]</a>",
+             "Hong Kong Democracy Crackdown Support - In 2020, HSBC faced criticism for publicly backing China's national security law in Hong Kong, which was used to suppress pro-democracy movements. <a href='https://www.theguardian.com/business/2023/feb/08/uk-mps-and-peers-find-hsbc-complicit-in-hong-kong-human-rights-abuses' target='_blank'>[Source]</a>",
+             "2013 Argentine Tax Evasion - HSBC was charged with helping over 4,000 clients evade taxes in Argentina, with alleged hidden accounts worth $3 billion. <a href='https://www.bbc.co.uk/news/business-31799402' target='_blank'>[Source]</a>",
+             "2021 Climate Hypocrisy - While publicly committing to climate goals, HSBC continued financing fossil fuel expansion projects worth billions, leading to accusations of greenwashing. <a href='https://www.bbc.co.uk/news/business-60366054' target='_blank'>[Source]</a>",
+             "2016 Household Finance Predatory Lending - HSBC's acquisition Household International faced lawsuits for predatory lending practices targeting vulnerable and low-income borrowers. <a href='https://www.reuters.com/article/world/uk/hsbc-to-pay-1575-billion-ending-household-international-class-action-idUSKCN0Z22O3/' target='_blank'>[Source]</a>",
+             "2012 Mis-selling to Elderly - HSBC was fined for inappropriately selling complex investment products to elderly customers in the UK without proper risk assessment. <a href='https://www.moneymarketing.co.uk/news/fsa-fines-hsbc-10-5m-over-misselling-to-elderly-customers/' target='_blank'>[Source]</a>",
+             "2021 Terrorism Financing Failures - HSBC was criticized for inadequate controls that allowed terrorism financing through its international banking network. <a href='https://www.bbc.co.uk/news/business-59689581' target='_blank'>[Source]</a>",
+             "2019 Forex Market Rigging Class Action - HSBC paid $30 million to settle a class action lawsuit related to rigging of foreign exchange markets. <a href='https://www.reuters.com/article/us-hsbc-settlement-bonds/hsbc-to-pay-30-million-to-settle-bond-rigging-lawsuit-in-us-idUSKCN1P41W3/' target='_blank'>[Source]</a>",
+             "1993-2003 Mexican Drug Cartel Money Laundering - HSBC's Mexican operations had such poor controls that cartels would design cash boxes specifically sized to fit HSBC teller windows. <a href='https://www.reuters.com/article/business/hsbc-became-bank-to-drug-cartels-pays-big-for-lapses-idUSBRE8BA05N/' target='_blank'>[Source]</a>",
+             "2018 South Africa Political Corruption - HSBC was implicated in the Gupta scandal, allegedly facilitating illicit funds tied to government corruption in South Africa. <a href='https://www.theguardian.com/business/2017/nov/01/hsbc-investigated-fund-transfers-south-africa-corruption-row-zuma-gupta' target='_blank'>[Source]</a>",
+             "2009 Bernie Madoff Facilitation - HSBC faced lawsuits for its role as custodian bank for 'feeder funds' that channeled billions into Bernie Madoff's Ponzi scheme. <a href='https://www.theguardian.com/business/2010/dec/06/hsbc-bernard-madoff-lawsuit' target='_blank'>[Source]</a>",
+             "2011 Improper Foreclosures - HSBC was among banks that signed a $25 billion settlement over improper foreclosure practices including 'robo-signing' of documents. <a href='https://www.theguardian.com/business/2016/feb/05/hsbc-fined-morgage-practices-financial-crisis' target='_blank'>[Source]</a>",
+             "2002-2009 Iran Sanctions Evasion - HSBC deliberately stripped identifying information from transactions with Iran to bypass U.S. sanctions. <a href='https://www.reuters.com/article/world/uk/us-report-says-hsbc-handled-iran-drug-money-idUSBRE86F186/' target='_blank'>[Source]</a>",
+             "2006-2007 Arms Industry Financing - HSBC was found to be financing companies producing cluster bombs despite international bans on such weapons. <a href='https://www.theguardian.com/business/2009/oct/29/banks-fund-cluster-bomb-trade' target='_blank'>[Facing Finance]</a>",
+             "2008 Forced Insurance Scheme - HSBC settled claims it forced unnecessary insurance on mortgage borrowers and received kickbacks from insurance providers. <a href='https://topclassactions.com/lawsuit-settlements/closed-settlements/hsbc-bank-force-placed-insurance-class-action-settlement/' target='_blank'>[Source]</a>",
+             "2018 Data Breaches - Multiple security breaches exposed sensitive customer information, with HSBC failing to implement adequate data protection. <a href='https://www.darkreading.com/cyber-risk/hsbc-data-breach-shows-failure-to-protect-passwords-access-controls' target='_blank'>[Source]</a>",
+             "2010 Tax Avoidance Schemes - HSBC created complex offshore structures specifically designed to help wealthy clients avoid legitimate taxation. <a href='https://www.bbc.co.uk/news/business-31248913' target='_blank'>[Source]</a>"
          ];
          
          // Function to display a random crime
