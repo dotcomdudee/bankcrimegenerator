@@ -2,4 +2,4 @@ This free generator helps you generate HSBC crimes, all of which are factually t
 
 [https://bankcrimegenerator.com](https://bankcrimegenerator.com/)
 
-![Crime examples!](https://raw.githubusercontent.com/dotcomdudee/bankcrimegenerator/refs/heads/main/crime-example.png "Crimes!")
+![Crime examples!](https://raw.githubusercontent.com/dotcomdudee/bankcrimegenerator/refs/heads/main/crimes.gif "Crimes!")
